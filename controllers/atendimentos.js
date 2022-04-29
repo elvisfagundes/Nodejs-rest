@@ -6,7 +6,6 @@ app.get('/atendimentos', (req, res) => res.send('Você está na rota de atendime
 app.post('/atendimentos', (req,res) => {
     const atendimento = req.body
 
-    Atendimento.adiciona(atendimento)
-    res.send('POST atendimento')
+    Atendimento.adiciona(atendimento, res)
     })
 }
