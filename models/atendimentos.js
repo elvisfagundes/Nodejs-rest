@@ -1,7 +1,7 @@
 const { default: axios } = require('axios');
 const res = require('express/lib/response')
 const moment = require ('moment'    )
-const conexao = require('../infraestrutura/conexao')
+const conexao = require('../infraestrutura/database/conexao')
 const axios = require('axios')
 
 class Atendimento {
